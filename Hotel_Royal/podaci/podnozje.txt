@@ -1,0 +1,16 @@
+</tbody>
+</table>
+<p id="info"></p>
+        </section>
+        <footer>
+        <p>
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/hr/"><img src="dokumenti/slike/cc.png" alt="cc"></a>
+            BY-SA 2.0 HR &copy; 30. Ožujka 2023. MIHAEL BARANAŠIĆ
+        </p>
+        <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/mbaranasi21">
+            <img id="html" src="dokumenti/slike/html5.png" alt="html">
+        </a>
+    </footer>
+    <script src="/javascript"></script>
+</body>
+</html>

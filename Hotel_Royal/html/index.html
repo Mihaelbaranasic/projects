@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mihael Baranašić">
+    <meta name="description" content="Stranica za hotel">
+    <meta name="keywords" content="hotel, royal, rezervacije">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="dokumenti/slike/logo.jpg" type="image/icon">
+    <link rel="stylesheet" href="css/mbaranasi21.css">
+    <link rel="stylesheet" href="css/mbaranasi21_responzivni_dizajn.css">
+    <title>Hotel Royal</title>
+</head>
+<body>
+    <header>
+        <!-- navigacija -->
+        
+            <nav class="main-nav">
+                <a href="index">
+                    <img id="logo" src="dokumenti/slike/logo.jpg" alt="logo">
+                </a>
+                <div class="menu-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <ul class="main-menu">
+                    <li><a id="trenutna" href="index">Početna</a></li>
+                    <li><a href="dokumentacija">Dokumentacija</a></li>
+                    <li><a href="autor">Autor</a></li>
+                    <li><a href="rezervacija">Rezervacije</a></li>
+                    <li><a href="kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <!-- baner -->
+            <div class="baner">
+                <img src="dokumenti/slike/baner.jpg" alt="banner" id="ban">
+                <h1>Hotel Royal</h1>
+                
+                <div class="ponude">
+                    <article class="hidden">
+                        <img src="dokumenti/slike/polupansion.jpg" alt="polupansion">
+                        <h3>Polupansion</h3>
+                        <a href="ponuda1" class="btn">
+                            Detalji <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+                    <article class="hidden">
+                        <img src="dokumenti/slike/pansion.jpg" alt="polupansion">
+                        <h3>Pansion</h3>
+                        <a href="ponuda2" class="btn">
+                            Detalji <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+                    <article class="hidden">
+                        <img src="dokumenti/slike/jacuzzi.jpg" alt="jacuzzi">
+                        <h3>Jacuzzi ponuda</h3>
+                        <a href="ponuda3" class="btn">
+                            Detalji <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section id="interaktivna" class="hidden">
+            <h2>Interaktivna slika</h2>
+            <div class="inter">
+                <img src="dokumenti/slike/interaktivna.jpg" width="400" height="580" usemap="#mapa" alt="interaktivna-slika">
+                <map name="mapa">
+                    <area shape="circle" coords="190,140,60" href="http://bazeni-varazdin.hr/wp/" alt="bazen">
+                    <area shape="rect" coords="310,20,380,210" href="https://www.fitness.com.hr/" alt="ananas">
+                    <area shape="poly" coords="90,400,170,450,190,250,200,220,220,200,200,180,180,250" href="https://open.spotify.com/" alt="gitara">
+                </map>
+                <p>Na ovoj slici možete kliknuti na nekoliko elemenata. Klikom na obruč otvara se web stranica Gradski bazeni Varaždin. Klikom na ananas otvara se stranica za fitness gjde možete vidjeti sve što vas zanima o pravilnoj prehrani i tjelovježbi. Klikom na gitaru otvara se stranica web aplikacija Spotify gdje možete slušati svoje najdraže pjesme. </p>
+            </div>
+        </section>
+        <section id="vid" class="hidden">
+            <h2>Kratki prikaz hotela</h2>
+            <div class="video">
+                <iframe title="YouTube video player" src="dokumenti/multimedija/video.mp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen sandbox></iframe>
+                <p>Pogledajte kratki video isječak hotela Royal. Kroz ovaj video možete istržiti prekrasno uređenje hotela uz spoj modernog stila i tradicionalne elegancije. Naše prijateljsko i profesionalno osoblje stoji Vam na raspolaganju kako bi osigurali da Vaš boravak bude što ugodniji i bezbrižniji.Rezervirajte svoj boravak u hotelu Royal i doživite izuzetno iskustvo boravka u gradu. <br> <br>
+                    <a href="rezervacija" class="btn">
+                        Rezervirajte odmah <i class="fas fa-chevron-right"></i>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section id="lokacija" class="karta hidden">
+            <h2>Pronađite te nas na karti!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44560.2411115877!2d15.994177158203124!3d45.73079260000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667ef1656eae03%3A0x12388dba37ab821!2sHotel%20Royal%20Airport!5e0!3m2!1shr!2shr!4v1680129494462!5m2!1shr!2shr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="usluge" class="cijene hidden">
+            <h2>Pogledajte naš cjenik sa izvrsnim ponudama</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Opis</th>
+                    <th colspan="2">Dan i vrijeme</th>
+                    <th>Cijena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spa tretman</td>
+                    <td>Uživajte u odličnim masažama koje pružaju naši stručni fizioterapeuti!</td>
+                    <td>Četvrtak</td>
+                    <td>16h - 20h</td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td>Grupni treninzi</td>
+                    <td>Dođite na grupne treninge u našoj odlično opremljenoj teretani sa našim profesionalnim trenerima i održite svoju fizičku formu čak i na odmoru.</td>
+                    <td>Srijeda</td>
+                    <td>15h - 16h</td>
+                    <td rowspan="2">20€</td>
+                </tr>
+                <tr>
+                    <td>Tečaj plivanja</td>
+                    <td>Ne znate plivati a željeli bi naučiti? Ovo je odlična prilika da sa našim trenerima naučite plivati u samo par sati učenja!</td>
+                    <td>Utorak</td>
+                    <td>12h - 14h</td>
+                </tr>
+                <tr>
+                    <td>Tečaj kulinarstva</td>
+                    <td>Uživate u hrani hotela i željeli biste naučiti kuhati kao naše profesionalno osoblje? Sada to možete sa našim majstorskim kuharima koji su uvijek spremni pomoći i naučiti Vas sve što znaju.</td>
+                    <td>Ponedjeljak</td>
+                    <td>8h - 12h</td>
+                    <td>10€</td>
+                </tr>
+                <tr>
+                    <td>Koncerti</td>
+                    <td>U velikoj dvorani u sklopu hotela možete uživati u odličnoj glazbi svima dobro poznatih izvođača. Uživajte u velikoj ponudi pića i družite se sa ostalim stanarima hotela. Koncerti se održavaju svaki tjedan, a svoje ulaznice možete zatražiti na recepciji.</td>
+                    <td>Petak</td>
+                    <td>20h - 1h</td>
+                    <td>30€</td>
+                </tr>
+                <tr>
+                    <td>Kino</td>
+                    <td>Dođite u naš kino i pogledajte svoje omiljene filmove na velikom platnu sa odličnim audio ozvučenjem.</td>
+                    <td>Svaki dan</td>
+                    <td>8h - 23h</td>
+                    <td>12€</td>
+                </tr>
+            </tbody>
+            </table>
+            <p id="info"></p>
+        </section>
+        <!--galerija-->
+        <div id="gal"></div>
+        <h2 class="hidden">Galerija slika</h2>
+        <section class="galerija">
+            <figure class="hidden">
+                <figcaption>1. Logo</figcaption>
+                <a href="https://www.dreamstime.com/stock-illustration-hotel-logo-template-background-image58362974">
+                    <img src="dokumenti/slike/logo.jpg" alt="logo">
+                </a>
+            </figure>
+            <figure class="hidden">
+                <figcaption>2. Polupansion</figcaption>
+                <a href="https://www.tripadvisor.in/Hotel_Review-g294265-d1218929-Reviews-Hotel_Royal-Singapore.html">
+                    <img src="dokumenti/slike/polupansion.jpg" alt="polupansion">
+                </a>
+            </figure>
+            <figure class="hidden">
+                <figcaption>3. Puni pansion</figcaption>
+                <a href="https://www.kayak.sg/Singapore-Hotels-Hotel-Royal.60130.ksp">
+                    <img src="dokumenti/slike/pansion.jpg" alt="pansion">
+                </a>
+            </figure>
+            <figure class="hidden">
+                <figcaption>4. Jacuzzi</figcaption>
+                <a href="https://www.hotel-riva.hr/luxury-suite-riva">
+                    <img src="dokumenti/slike/jacuzzi.jpg" alt="jacuzzi">
+                </a>
+            </figure>
+            <figure class="hidden">
+                <figcaption>5. Stvari za plažu</figcaption>
+                <a href="https://www.freepik.com/premium-vector/summer-beach-items-set_4595741.htm">
+                    <img src="dokumenti/slike/interaktivna.jpg" alt="interaktivna">
+                </a>
+            </figure>
+            <figure class="hidden">
+                <figcaption>6. Banner</figcaption>
+                <a href="https://www.nytimes.com/2019/03/20/travel/shop-hotel-rooms-boutiques-retail.html">
+                    <img src="dokumenti/slike/baner.jpg" alt="banner">
+                </a>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/hr/"><img src="dokumenti/slike/cc.png" alt="cc"></a>
+            BY-SA 2.0 HR &copy; 30. Ožujka 2023. MIHAEL BARANAŠIĆ
+        </p>
+        <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/mbaranasi21">
+            <img id="html" src="dokumenti/slike/html5.png" alt="html">
+        </a>
+    </footer>
+    <script src="/javascript"></script>
+</body>
+</html>

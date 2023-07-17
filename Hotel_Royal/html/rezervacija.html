@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mihael Baranašić">
+    <meta name="description" content="Stranica za hotel">
+    <meta name="keywords" content="hotel, royal, rezervacije">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="../dokumenti/slike/logo.jpg" type="image/icon">
+    <link rel="stylesheet" href="/css/mbaranasi21.css">
+    <link rel="stylesheet" href="/css/mbaranasi21_responzivni_dizajn.css">
+    <title>Hotel Royal</title>
+</head>
+<body>
+    <header>
+            <nav class="main-nav">
+                <a href="index">
+                    <img src="../dokumenti/slike/logo.jpg" alt="logo">
+                </a>
+                <div class="menu-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <ul class="main-menu">
+                    <li><a href="index">Početna</a></li>
+                    <li><a href="dokumentacija">Dokumentacija</a></li>
+                    <li><a href="autor">Autor</a></li>
+                    <li><a id="trenutna" href="#">Rezervacije</a></li>
+                    <li><a href="kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <div id="greske"></div>
+        <h1>Rezervacija</h1>
+        <form action="/api/rezervacije" method="post" novalidate>
+            <fieldset>
+                <h4>Osobni podaci</h4>
+                <p>
+                    <label for="ime">Ime: </label>
+                    <input type="text" name="ime" id="ime" required>
+                </p>
+                <p>
+                    <label for="prezime">Prezime: </label>
+                    <input type="text" name="prezime" id="prezime" required>
+                </p>
+                <p>
+                    <label for="oib">OIB </label>
+                    <input type="text" name="oib" id="oib" required>
+                </p>
+                <p>
+                    <label for="posta">Vaša mail adresa: </label>
+                    <input type="email" name="posta" id="posta" required>
+                </p>
+            </fieldset>
+            <fieldset>
+            <h4>Podaci o boravku</h4>
+            <p>
+                <label for="soba">Odaberite tip sobe: </label>
+                <select name="soba" id="soba">
+                    <option value="penthouse">Penthouse</option>
+                    <option value="bracni">Soba s bračnim krevetom</option>
+                    <option value="odvojeni_kreveti">Odvojeni kreveti</option>
+                    <option value="jacuzzi">Soba s jacuzzijem</option>
+                </select>
+            </p>
+            <p>
+                <label for="akcija">Odaberite akcijsku ponudu:</label>
+                <p>
+                    <p>
+                        <input type="radio" name="akcija" value="pansion" id="akcija"> Puni pansion
+                    </p>
+                     <p>
+                        <input type="radio" name="akcija" value="polupansion"> Polupansion
+                     </p>
+                    <input type="radio" name="akcija" value="bez" checked> Bez akcijske ponude 
+            <p>
+                <label for="ponude">Odaberite ponude iz cjenika:</label>
+                <p>
+                    <input type="checkbox" name="ponude[]" id="ponude" value="spa"> Spa
+                </p>
+                <p>
+                    <input type="checkbox" name="ponude[]" id="trening" value="trening"> Grupni treninzi
+                </p>
+                <p>
+                    <input type="checkbox" name="ponude[]" id="tecaj1" value="plivanje"> Tečaj plivanja
+                </p>
+                <p>
+                    <input type="checkbox" name="ponude[]" id="tecaj2" value="kuhanje"> Tečaj kulinarstva
+                </p>
+            <p>
+                <label for="datum1">Datum dolaska: </label>
+                <input type="date" name="datum1" id="datum1" required>
+            </p>
+            <p>
+                <label for="datum2">Datum iseljenja: </label>
+                <input type="date" name="datum2" id="datum2" required>
+            </p>
+            <p>
+                <label for="vrijeme">Vrijeme dolaska</label>
+                <input type="time" name="vrijeme" id="vrijeme" required>
+            </p>
+            <button type="submit" value="salji" class="btn">Rezerviraj<i class="fas fa-chevron-right"></i></button>
+            <button type="reset" value="resitiraj" class="btn">Osvježi obrazac</button>
+        </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/hr/"><img src="../dokumenti/slike/cc.png" alt="cc"></a>
+            BY-SA 2.0 HR &copy; 30. Ožujka 2023. MIHAEL BARANAŠIĆ
+        </p>
+        <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/mbaranasi21/ostalo/rezervacija.html">
+            <img id="html" src="../dokumenti/slike/html5.png" alt="html">
+        </a>
+    </footer>
+    <script src="/javascript"></script>
+</body>
+</html>

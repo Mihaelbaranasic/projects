@@ -1,0 +1,197 @@
+@media screen and (max-width: 1024px) and (min-width: 480px){
+    body{
+        background: #020202da !important;
+        color: #fff !important;
+    }
+    .main-nav{
+        background-color: rgb(0, 255, 255);
+    }
+    .baner h1{
+        color: #000;
+    }
+    .ponude article{
+        background-color: #1212129c;
+        border: 1px solid #1212129c;
+    }
+    .btn{
+        background: #fff;
+        color: #262626;
+    }
+    section .inter{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .video, .detaljno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video p, .inter p, .detaljno p{
+        width: 50%;
+        background-color: #1212129c !important;
+        border: 1px solid #1212129c !important;
+        margin-top: 30px;
+    }
+    .galerija{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+    .autor{
+        width: 90%;
+        background-color: #1212129c;
+        border: 1px solid #1212129c;
+    }
+    .autor ul li a{
+        color: #fff;
+    }
+    fieldset{
+        background-color: #1212129c;
+        border: 1px solid #1212129c;
+    }
+    footer{
+        background-color: #fff;
+        color: #262626;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    form {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    fieldset {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    textarea{
+        width: 100%;
+    }
+    input[type="radio"], input[type="checkbox"] {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    input {
+        width: 100%;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .main-nav ul{
+        display: none;
+        position: fixed;
+        margin-top: 65px;
+        top: 0;
+        right: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 40%;
+        border-left: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transition: transform 0.5s ease-in-out;
+        z-index: 2;
+    }
+    .main-nav ul li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    .menu-btn:hover + .main-menu{
+        display: block;
+    }
+    .main-menu:hover{
+        display: block;
+    }
+    .main-nav img{
+        height: 50px;
+        width: auto;
+        margin-top: 10px;
+    }
+    div.ponude{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-top: 40px;
+    }
+    #ban{
+        height: 130%;
+    }
+    .ponude article{
+        height: 100%;
+    }
+    
+    .ponude article img{
+        max-width: 100%;
+        height: 100px;
+    }
+    section .inter{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    section .inter p{
+        width: 80%;
+    }
+    .video, .detaljno{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .video p, .inter p, .detaljno p{
+        width: 80%;
+    }
+    .detaljno img{
+        height: auto;
+        width: 100%;
+    }
+    table td:not(:first-child),
+    table th:not(:first-child) {
+        display: none;
+    }
+    .cijene table{
+        margin: auto;
+    }
+    #info{
+        display: block;
+    }
+    .galerija{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+    .galerija figure img{
+        height: auto;
+        width: 100%;
+    }
+    .autor{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+    .autor ul{
+        margin-top: 10px;
+        width: 80%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mihael Baranašić">
+    <meta name="description" content="Stranica za hotel">
+    <meta name="keywords" content="hotel, royal, rezervacije">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="dokumenti/slike/logo.jpg" type="image/icon">
+    <link rel="stylesheet" href="css/mbaranasi21.css">
+    <link rel="stylesheet" href="css/mbaranasi21_responzivni_dizajn.css">
+    <title>Hotel Royal</title>
+</head>
+<body>
+    <header>
+        <!-- navigacija -->
+        
+            <nav class="main-nav">
+                <a href="index">
+                    <img src="dokumenti/slike/logo.jpg" alt="logo">
+                </a>
+                <div class="menu-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <ul class="main-menu">
+                    <li><a id="trenutna" href="index">Početna</a></li>
+                    <li><a href="dokumentacija">Dokumentacija</a></li>
+                    <li><a href="autor">Autor</a></li>
+                    <li><a href="rezervacija">Rezervacije</a></li>
+                    <li><a href="kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section id="usluge" class="cijene">
+            <h2>Pogledajte naš cjenik sa izvrsnim ponudama</h2>
+            <table>
+            <thead>
+                <tr>
+                    <th>Naziv</th>
+                    <th>Opis</th>
+                    <th colspan="2">Dan i vrijeme</th>
+                    <th>Cijena</th>
+                </tr>
+            </thead>
+            <tbody>

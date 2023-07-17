@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #26262614;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    height: 100%;
+}
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+
+#trenutna{
+    border-bottom: 2px solid rgb(241, 17, 17);
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+main h1{
+    text-align: center;
+    padding: 20px;
+}
+
+#logo{
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    padding: 5px;
+}
+
+/* navigacija */
+
+nav ul{
+    list-style: none;
+    padding: 0px 25px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    padding: 20px 0;
+    font-size: 14px;
+    background-color: rgba(0, 255, 255, 0.748);
+    overflow: hidden;
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    z-index: 1;
+    display: none;
+}
+
+.main-nav img{
+    margin-left: 45px;
+    height: 60px;
+    width: auto;
+}
+
+.main-nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-nav ul li::after{
+    content: " ";
+    padding-left: 5px;
+}
+
+.main-nav ul li::before{
+    content: " ";
+    padding-right: 5px;
+}
+
+.main-nav ul li a{
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+/* baner */
+.baner{
+    text-align: center;
+    margin-bottom: 25em;
+}
+
+#ban{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.baner h1{
+    font-size: 70px;
+    margin-bottom: -30px;
+    padding-top: 100px;
+}
+
+div.ponude{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    margin-top: 150px;
+}
+
+.ponude article{
+    height: 100%;
+    position: relative;
+    background-color: #cccccc9c;
+    border: 1px solid #cccccc9c;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.ponude article img{
+    padding-top: 10px;
+    max-width: 100%;
+    height: 200px;
+}
+
+.ponude h3{
+    margin-bottom: 5px;
+}
+
+.btn a{
+    display: inline-block;
+    padding-top: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover i{
+    margin-left: 10px;
+}
+
+/* interaktivna slika */
+section h2, main h2{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+section .inter{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+section .inter p{
+    width: 30%;
+    height: fit-content;
+    text-align: justify;
+}
+
+section .inter img{
+    margin-bottom: 15px;
+}
+
+/* video */
+.video, .detaljno{
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.video p, .inter p, .detaljno p{
+    width: 30%;
+    line-height: 1.7;
+    text-align: justify;
+    padding: 0 10px;
+    background-color: #cccccc9c;
+    border: 1px solid #cccccc9c;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    padding-bottom: 25px;
+    height: fit-content;
+}
+
+.video iframe{
+    width: auto;
+    height: 315px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #cccccc9c;
+    border: 1px solid #cccccc9c;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+}
+
+.detaljno img{
+    height: 450px;
+    width: auto;
+}
+
+/* karta */
+.karta{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.karta iframe{
+    width: 600px;
+    height: 450px;
+    border:0;
+}
+
+/* cjenik */
+.cijene{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.cijene table, .cijene th, .cijene td {
+    border: rgba(0, 255, 255, 0.748) solid;
+    border-collapse: collapse;
+}
+
+h2 ~ table tr:hover{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+thead tr{
+    background-color: #9393935f;
+}
+
+tr:nth-child(even){
+    background-color: #9393935f;
+}
+
+#info{
+    display: none;
+}
+
+/* galerija */
+.galerija{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.galerija figure img{
+    padding-top: 0px;
+    height: 300px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galerija figure img:hover{
+    transform: scale(1.03);
+}
+
+.galerija figure{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    background-color: #262626;
+    padding-top: 20px;
+    color: #fff;
+    position: absolute;
+    overflow:hidden;
+    clear: both;
+}
+
+footer p{
+    margin-left: 30px;
+    padding: 0;
+}
+
+#html{
+    width: 40px;
+    margin-top: -10px;
+}
+
+footer p img{
+    width: 20px;
+}
+
+/* autor */
+.autor{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    background-color: #cccccc9c;
+    border: 1px solid #cccccc9c;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.388);
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.autor ul{
+    width: 50%;
+    height: 100%;
+}
+
+.autor img{
+    width: 200px;
+    height: 200px;
+}
+
+.autor ul > li{
+    line-height: 1.7;
+    list-style-type: circle;
+}
+
+.autor blockquote{
+    line-height: 1;
+    text-align: justify;
+    margin-left: 25px;
+    padding-bottom: 25px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+span{
+    font-style: italic;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+span.italic{
+    font-style: italic;
+    opacity: 1;
+}
+
+span.fade{
+    opacity: 1;
+}
+
+#disk{
+    list-style: none;
+}
+
+/* obrasci */
+fieldset{
+    max-width: 50%;
+    margin: auto;
+    height: 100%;
+    width: fit-content;
+    background-color: #cccccc9c;
+    border: 1px solid #cccccc9c;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.388);
+    padding: 10px;
+    margin-bottom: -30px;
+    margin-top: 50px;
+    text-align: justify;
+    line-height: 1.7;
+    margin: 20px;
+    padding: 0;
+    border-style: none;
+}
+
+form{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#greske{
+    width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #cccccc;
+    border: 1px solid #ff0000;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.388);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+    display: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#greske p{
+    width: 90%;
+    margin: auto;
+    line-height: 2;
+    border: solid 1px #000;
+}
+
+.dok{
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.388);
+    margin-bottom: 100px;
+}
+
+form h4{
+    text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+form p{
+    margin-bottom: 15px;
+}
+
+.dok ul{
+    list-style: none;
+}
+
+.dok ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.dok ul li a:hover{
+    color: blue !important;
+}
+
+.d-flex{
+    margin-bottom: 25px;
+}

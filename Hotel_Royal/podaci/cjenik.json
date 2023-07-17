@@ -1,0 +1,72 @@
+[
+    {
+        "Naziv" : "Spa Tretman",
+        "Opis" : "Uživajte u odličnim masažama koje pružaju naši stručni fizioterapeuti!",
+        "Dan" : "Četvrtak",
+        "Vrijeme" : "16h - 20h",
+        "Cijena" : "50€"
+    },
+    {
+        "Naziv" : "Grupni treninzi",
+        "Opis" : "Dođite na grupne treninge u našoj odlično opremljenoj teretani sa našim profesionalnim trenerima i održite svoju fizičku formu čak i na odmoru.",
+        "Dan" : "Srijeda",
+        "Vrijeme" : "15h - 16h",
+        "Cijena" : "20€"
+    },
+    {
+        "Naziv" : "Tečaj plivanja",
+        "Opis" : "Ne znate plivati a željeli bi naučiti? Ovo je odlična prilika da sa našim trenerima naučite plivati u samo par sati učenja!",
+        "Dan" : "Utorak",
+        "Vrijeme" : "12h - 14h",
+        "Cijena" : "20€"
+    },
+    {
+        "Naziv" : "Tečaj kulinarstva",
+        "Opis" : "Uživate u hrani hotela i željeli biste naučiti kuhati kao naše profesionalno osoblje? Sada to možete sa našim majstorskim kuharima koji su uvijek spremni pomoći i naučiti Vas sve što znaju.",
+        "Dan" : "Ponedjeljak",
+        "Vrijeme" : "8h - 12h",
+        "Cijena" : "10€"
+    },
+    {
+        "Naziv" : "Koncerti",
+        "Opis" : "U velikoj dvorani u sklopu hotela možete uživati u odličnoj glazbi svima dobro poznatih izvođača. Uživajte u velikoj ponudi pića i družite se sa ostalim stanarima hotela. Koncerti se održavaju svaki tjedan, a svoje ulaznice možete zatražiti na recepciji.",
+        "Dan" : "Petak",
+        "Vrijeme" : "20h - 1h",
+        "Cijena" : "30€"
+    },
+    {
+        "Naziv" : "Kino",
+        "Opis" : "Dođite u naš kino i pogledajte svoje omiljene filmove na velikom platnu sa odličnim audio ozvučenjem.",
+        "Dan" : "Svaki dan",
+        "Vrijeme" : "8h - 23h",
+        "Cijena" : "12€"
+    },
+    {
+        "Naziv": "Sportski turnir",
+        "Opis": "Pokažite svoje sportske vještine i natječite se s drugim gostima hotela u raznim sportskim disciplinama.",
+        "Dan": "Subota",
+        "Vrijeme": "14h - 18h",
+        "Cijena": "15€"
+    },
+    {
+        "Naziv": "Izlet u prirodu",
+        "Opis": "Otkrijte ljepotu okolne prirode i upustite se u pustolovinu istraživanja uz stručnog vodiča.",
+        "Dan": "Nedjelja",
+        "Vrijeme": "9h - 11h",
+        "Cijena": "20€"
+    },
+    {
+        "Naziv": "Vinski tulumi",
+        "Opis": "Uživajte u degustaciji vrhunskih vina uz pratnju glazbe i zabave na posebnim večerima posvećenima vinu.",
+        "Dan": "Četvrtak",
+        "Vrijeme": "19h - 22h",
+        "Cijena": "40€"
+    },
+    {
+        "Naziv" : "Rafting",
+        "Opis" : "Rafting je adrenalinska aktivnost koja vas vodi na uzbudljivu pustolovinu niz brze rijeke, pružajući vam nevjerojatno iskustvo spuštanja kroz bujice i izazova prirode, dok stvarate nezaboravne uspomene.",
+        "Dan" : "Subota",
+        "Vrijeme" : "10h - 18h",
+        "Cijena" : "45€"
+    }
+]
