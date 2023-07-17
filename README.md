@@ -1,2 +1,2 @@
 # projects
-Projects done through youtube, scholl and self made projects.
+Projects done through youtube, college and self made projects.
